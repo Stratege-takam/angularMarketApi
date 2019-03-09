@@ -1,0 +1,50 @@
+﻿@model WebApiForAngular.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustemerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustemerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PMethod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PMethod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GTotal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
